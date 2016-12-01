@@ -12,8 +12,9 @@ function getTemp(location) {
     } else {
       return res.data.main.temp
     }
-  }, (res) => {
-    throw new Error(res.data.message)
+  }, (err) => {
+    // throw new Error(err.response.data.message)
+    throw new Error('Unable to fetch weather for that location.')
   })
 }
 
