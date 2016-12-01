@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 let WeatherMessage = ({ temp, location }) => {
   return (
     <div>
-      <p>
+      <h3 className='text-center'>
         It is {temp} in {location}.
-      </p>
+      </h3>
     </div>
   )
 }
